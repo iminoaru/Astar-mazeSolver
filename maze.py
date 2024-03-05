@@ -2,7 +2,7 @@ import pygame
 import math
 from queue import PriorityQueue
 
-WIDTH = 800
+WIDTH = 600
 Win = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption("Maze Solving with A*")
 
@@ -153,9 +153,9 @@ def makeGrid(rows, width):
     for i in range(rows):
         grid.append([])
         for j in range(rows):
-            if i == 0 or i == rows - 1 or j == 0 or j == rows - 1:  # Check if the cell is at the border
+            if i == 0 or i == rows - 1 or j == 0 or j == rows - 1:  
                 spot = Node(i, j, gap, rows)
-                spot.makeBarrier()  # Set the color of the border cells to black
+                spot.makeBarrier()  
             else:
                 spot = Node(i, j, gap, rows)
             grid[i].append(spot)
