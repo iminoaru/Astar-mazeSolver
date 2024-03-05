@@ -17,6 +17,7 @@
 - `space` runs the algorithm.
 - orange represents start, blue represents goal, black represents obstacles.
 - `C` to clear the map.
+- right click to remove the obstacle.
  
 
 ## About the Algorithm
@@ -27,7 +28,7 @@
 
 Formula used to calculate heuristic function is Manhattan Equation which is ideal for square grids. Taking D = 1 for simple calculations.
 
-> h(n) = abs(node.x - goal.x) + abs(node.y - goal.y)
+> h(n) = D * abs(node.x - goal.x) + abs(node.y - goal.y)
 
 It maintains an openset which remains open until the corresponding `f(n)` to that node becomes minimum.
 
