@@ -6,16 +6,11 @@ WIDTH = 600
 Win = pygame.display.set_mode((WIDTH, WIDTH))
 pygame.display.set_caption("Maze Solving with A*")
 
-RED = (255, 128, 128)
-GREEN = (128, 255, 128)
-BLUE = (128, 128, 255)
-YELLOW = (255, 255, 128)
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-PURPLE = (192, 128, 192)
-ORANGE = (255, 200, 128)
-GREY = (192, 192, 192)
-TURK = (144, 208, 200)
+RED, GREEN, BLUE, YELLOW, WHITE, BLACK, PURPLE, ORANGE, GREY, TURK = (
+    (255, 128, 128), (128, 255, 128), (128, 128, 255), (255, 255, 128),
+    (255, 255, 255), (0, 0, 0), (192, 128, 192), (255, 200, 128),
+    (192, 192, 192), (144, 208, 200)
+)
 
 class Node:
     def __init__(self, row, col, width, totalRows):
